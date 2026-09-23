@@ -12,6 +12,7 @@ body{
     align-items: center;
     justify-content: start;
     height: 100vh;
+    width: 100vw;
 }
 
 .crud-app-title{
@@ -21,4 +22,29 @@ body{
 .container{
     display: flex;
     gap: 50px;
+}
+
+.posts{
+    width: 400px;
+}
+
+.post-list-item{
+
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.post-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.post-btn{
+    margin: 4px;
+    text-decoration: underline;
+    color: blue;
 }
