@@ -46,10 +46,15 @@ let createPost = () => {
                 <p class="edit-o post-btn">
                     <i class="fa-solid fa-pen-to-square"></i>O
                 </p>
-                <p class="delete-x post-btn">
+                <p onClick = "deletePost(this)" class="delete-x post-btn">
                     <i class="fa-solid fa-check"></i>X
                  </p>
             </span>
     </div>
     `
+    input.value = "";
+}
+
+let deletePost = (e) => {
+    e.remove()
 }
