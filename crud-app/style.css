@@ -47,4 +47,16 @@ body{
     margin: 4px;
     text-decoration: underline;
     color: blue;
+    user-select: none;
+    
+}
+
+.post-btn:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+.submit-post-btn{
+    user-select: none;
+    cursor: pointer;
 }
