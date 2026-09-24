@@ -43,7 +43,7 @@ let createPost = () => {
     <div class="post-1 post-list-item">
         <p class="post-1-msg">${data.text}</p>
             <span class="post-btns">
-                <p class="edit-o post-btn">
+                <p onClick = "editPost(this)" class="edit-o post-btn">
                     <i class="fa-solid fa-pen-to-square"></i>O
                 </p>
                 <p onClick = "deletePost(this)" class="delete-x post-btn">
@@ -56,5 +56,10 @@ let createPost = () => {
 }
 
 let deletePost = (e) => {
-    e.remove()
+    e.parentElement.parentElement.remove()
+}
+
+let editPost = (e) => {
+   input.value = e.parentElement.previousElementSibling.innerHTML
+   e.parentElement.parentElement.remove()
 }
