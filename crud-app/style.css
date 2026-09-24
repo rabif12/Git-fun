@@ -33,7 +33,7 @@ body{
     margin: 20px 10px;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
 }
 
 .post-btns{
@@ -44,11 +44,15 @@ body{
 }
 
 .post-btn{
+
     margin: 4px;
-    text-decoration: underline;
-    color: blue;
+    color: rgb(255, 72, 115);
     user-select: none;
-    
+    font-size: 1.4rem;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.582);
+    margin-left: 24px;
+    position: relative;
+    bottom: 4px;
 }
 
 .post-btn:hover{
@@ -59,4 +63,9 @@ body{
 .submit-post-btn{
     user-select: none;
     cursor: pointer;
+}
+
+.blank-msg{
+    color: red;
+    margin-bottom: 4px;
 }
