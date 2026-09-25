@@ -63,3 +63,23 @@ let editPost = (e) => {
    input.value = e.parentElement.previousElementSibling.innerHTML
    e.parentElement.parentElement.remove()
 }
+
+// ----modal js
+
+
+const modalBackdrop = document.getElementById('modal-backdrop');
+
+function openModal() {
+  modalBackdrop.classList.add('is-open');
+}
+
+function closeModal() {
+  modalBackdrop.classList.remove('is-open');
+}
+
+// Optional: Close modal when clicking outside the content area
+modalBackdrop.addEventListener('click', (event) => {
+  if (event.target === modalBackdrop) {
+    closeModal();
+  }
+});
