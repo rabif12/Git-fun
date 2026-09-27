@@ -55,12 +55,17 @@ body{
 
 .modal-layer{
     position: absolute;
-    top: 0;
-    display: none;
+    top: -800px;
+    opacity: 0;
+    transition: top .8s ease-in, opacity 0.4s ease-in;
 }
 
 .modal-layer.active-modal {
+    position: absolute;
+    top: 0;
+    opacity: 1;
     display: flex;
+    transition: top 0.8s ease-in, opacity 0.4s ease-in;
 }
 
 .container-modal{
