@@ -21,6 +21,7 @@ body{
     border-radius: 8px;
     padding: 20px;
     background-color: white;
+    overflow: hidden;
 }
 
 .addNew{
@@ -50,7 +51,11 @@ body{
     font-size: 1rem;
     padding: 2px 6px;
     border-radius: 4px;
-    background-color: #ffffff;
+    color: white;
+    border: solid 1px white;
+    background-color: #1e83ff;
+    cursor: pointer;
+    user-select: none;
 }
 
 .modal-close-btn{
@@ -58,13 +63,16 @@ body{
     padding: 2px 6px;
     border-radius: 4px;
     background-color: #ffffff;
+    border: 1px solid black;
+    cursor: pointer;
+    user-select: none;
 }
 
 .modal-layer{
     position: absolute;
     top: -800px;
     opacity: 0;
-    transition: top .8s ease-in, opacity 0.4s ease-in;
+    transition: top .4s ease-in, opacity 0.4s ease-in;
 }
 
 .modal-layer.active-modal {
@@ -72,7 +80,7 @@ body{
     top: 0;
     opacity: 1;
     display: flex;
-    transition: top 0.8s ease-in, opacity 0.4s ease-in;
+    transition: top 0.4s ease-in, opacity 0.4s ease-in;
 }
 
 .container-modal{
@@ -102,3 +110,65 @@ body{
 .modal-input{
     padding: 6px;
 }
+
+.task-box{
+    border-radius: 4px;
+    background-color: rgba(171, 206, 161, 0.35);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-height: 340px;
+    min-height: 340px;
+    overflow-y: auto;
+
+    /* no scroll bar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.task-box::-webkit-scrollbar {
+    display: none;
+}
+
+.task-bits{
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+.task-title{
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+}
+.task-date{
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.task-info{
+    margin-bottom: 2px;
+}
+
+.task-btns{
+    display: flex;
+    margin-bottom: 28px;
+    user-select: none;
+}
+.task-btn{
+    background-color: #1e83ff;
+    padding: 2px 8px;
+    margin-top: 2px;
+    margin-right: 6px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.task-btn:hover{
+    background-color: #1e83ffc6;
+
+}
+
+
+
+/*---------cheating */
