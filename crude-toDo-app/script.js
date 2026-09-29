@@ -8,23 +8,34 @@ let modalInfo = document.querySelector(".modal-info-input")
 let deleteBtn = document.querySelectorAll(".task-delete-btn")
 let editBtn = document.querySelectorAll(".task-edit-btn")
 
+let openModal = () => modalLayer.classList.add("active-modal");
+let closeModal = () => modalLayer.classList.remove("active-modal");
+
+addNew.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+
+updateBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    closeModal();
+});
+
 deleteBtn.forEach((btn)=>{
     btn.addEventListener("click",(e)=>{
         e.target.closest(".tasks").remove()
     })
 })
 
-addNew.addEventListener("click",()=>{
-    modalLayer.classList.toggle("active-modal")
-    console.log("clicked original btn")})
+// addNew.addEventListener("click",()=>{
+//     modalLayer.classList.toggle("active-modal")
+//     console.log("clicked original btn")})
 
-updateBtn.addEventListener("click",()=>{
-    modalLayer.classList.toggle("active-modal")
-    console.log("clicked update")})
+// updateBtn.addEventListener("click",()=>{
+//     modalLayer.classList.toggle("active-modal")
+//     console.log("clicked update")})
 
-closeBtn.addEventListener("click",()=>{
-    modalLayer.classList.toggle("active-modal")
-    console.log("clicked close")})
+// closeBtn.addEventListener("click",()=>{
+//     modalLayer.classList.toggle("active-modal")
+//     console.log("clicked close")})
 
 
 
