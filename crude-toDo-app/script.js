@@ -1,5 +1,6 @@
 let addNew = document.querySelector(".addNew")
-let updateBtn = document.querySelector(".update-btn")
+let updateBtn = document.querySelector(".task-edit-btn")
+let addBtn = document.querySelector(".update-btn")
 let closeBtn = document.querySelector(".modal-close-btn")
 let modalLayer = document.querySelector(".modal-layer")
 let modalTitle = document.querySelector(".modal-title-input")
@@ -16,7 +17,19 @@ closeBtn.addEventListener("click", closeModal);
 
 updateBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    closeModal();
+    if (modalLayer.classList.contains("active-modal")) {
+        closeModal();
+    } else {
+        openModal();
+    }
+});
+
+addBtn.addEventListener("click", (e) => {
+    if (modalLayer.classList.contains("active-modal")) {
+        closeModal();
+    } else {
+        openModal();
+    }
 });
 
 deleteBtn.forEach((btn)=>{
