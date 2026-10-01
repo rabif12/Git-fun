@@ -1,2 +1,2 @@
 # my 2026 final call Project
-basically this is me learning git and basics of crud app i have trouble with javascript right now so my javascript file is detailed notes to help me recreate it with notesthen again withoutnotes. after i learn react tutorial i haveto translate the vanillahtml js crud app to react using multiple pagesdynamic on all of them
+basically this is me learning git and basics of crud app i have trouble with javascript right now so my javascript file is detailed notes to help me recreate it with notes then again without notes. after i learn the react tutorial i have to translate the vanilla html js crud app into react using multiple pages dynamic on all of them
