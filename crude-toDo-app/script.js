@@ -85,7 +85,7 @@ taskBox.addEventListener("click", (e)=>{
 //----- add/update button inside modal
 addBtn.addEventListener("click", (e) => {
     e.preventDefault();
-
+    // if modal title is nothing then stop
     if (modalTitle.value.trim() === "") return;
 
     if (selectedTask === null) {
@@ -99,7 +99,7 @@ addBtn.addEventListener("click", (e) => {
 
         // Reset memory back to null after editing is finished
         selectedTask = null;
-    }
+    };
 
     // Clear inputs
     modalTitle.value = "";
