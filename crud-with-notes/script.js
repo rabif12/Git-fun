@@ -3,7 +3,7 @@
 
 
 
-// let form = document.querySelector("#form")
+// let form = document.querySelector("#form")hk
 // let input = document.querySelector("#input")
 // let blankMsg = document.querySelector(".blank-msg")
 // let posts = document.querySelector(".posts")
