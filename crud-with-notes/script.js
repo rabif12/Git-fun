@@ -2,7 +2,7 @@
 
 
 
-
+// use the notes to complete this with ai help if needed but i need to complete this without notes too
 // let form = document.querySelector("#form")hk
 // let input = document.querySelector("#input")
 // let blankMsg = document.querySelector(".blank-msg")
