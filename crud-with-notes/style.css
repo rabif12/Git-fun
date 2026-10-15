@@ -22,11 +22,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: stretch;
+    flex-direction: column;
     
 }
 
 .header-container{
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:6px 40px;
+    padding-top: 20px;
 }
 .header-title{
     color: rgb(255, 166, 0);
@@ -34,4 +40,66 @@ body{
     letter-spacing: 1px;
     text-decoration: underline;
     padding-bottom: 4px;
+}
+
+.task-box{
+    color: white;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+    scrollbar-width: none;
+}
+
+&::-webkit-scrollbar {
+    display: none;
+  }
+
+.task-item{
+    margin: 10px 0;
+}
+
+.header-input{
+    margin: 4px;
+    padding: 2px;
+}
+
+.header-input-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-btn{
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.task-list-title{
+    text-decoration: underline;
+    margin-bottom: 6px;
+}
+
+.task-list-date{
+    font-weight: 200;
+    font-size: .8rem;
+    padding-bottom: 10px;
+}
+
+.task-item{
+    background-color: red;
+    padding: 2px;
+}
+
+.task-header-title{
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-top: 30px;
 }
