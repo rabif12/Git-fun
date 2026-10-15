@@ -1,4 +1,14 @@
-let mainContainer = document.querySelector(".main-container");
+const mainContainer = document.querySelector(".main-container");
+
+mainContainer.addEventListener("click",(e)=>{
+
+    let targetClasses = e.target.closest(".header-btn");
+
+    if (!targetClasses) return;
+
+    console.log("clicked the add btn")
+
+});
 
 // let input = document.querySelector("#input")
 // let blankMsg = document.querySelector(".blank-msg")
