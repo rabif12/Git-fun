@@ -1,96 +1,46 @@
 const mainContainer = document.querySelector(".main-container");
 
-mainContainer.addEventListener("click",(e)=>{
 
+//reuse this for all ---addBTN---
+mainContainer.addEventListener("click",(e)=>{
+    // this is literally all you have to change and the funtion finds any child within the parent.
     let targetClasses = e.target.closest(".header-btn");
 
     if (!targetClasses) return;
 
-    console.log("clicked the add btn")
+    console.log("clicked the add btn");
 
 });
 
-// let input = document.querySelector("#input")
-// let blankMsg = document.querySelector(".blank-msg")
-// let posts = document.querySelector(".posts")
-// let post1msg = document.querySelector(".post-1-msg")
-// let post2msg = document.querySelector(".post-2-msg")
+//----header text area
+mainContainer.addEventListener("click",(e)=>{
+    // this is literally all you have to change and the funtion finds any child within the parent.
+    let targetClasses = e.target.closest(".header-input-info");
 
+    if (!targetClasses) return;
 
+    console.log("clicked the task area for text");
 
-// form.addEventListener("submit", (e)=>{
-//     e.preventDefault()
-//     console.log("clicked")
-//     formValidation()
-// })
+});
 
+//----header text area
+mainContainer.addEventListener("click",(e)=>{
+    // this is literally all you have to change and the funtion finds any child within the parent.
+    let targetClasses = e.target.closest(".header-input-date");
 
-// let formValidation = ()=>{
-//     if(input.value === ""){
-//         blankMsg.innerHTML="post cannot be blank"
-//         console.log("failure type something")
-//     }
-//     else{
-//         // post1msg.innerHTML=`${input.value}`
-//         console.log("success")
-//         acceptData()
-//         input.value = ""
-//         blankMsg.innerHTML = ""
-//     }
-// }
+    if (!targetClasses) return;
 
+    console.log("clicked the task date area");
 
-// let data = {}
+});
 
-// let acceptData = () => {
-//     data["text"] = input.value
-//     console.log(data) 
-//     createPost()
-// }
+mainContainer.addEventListener("click",(e)=>{
+    // this is literally all you have to change and the funtion finds any child within the parent.
+    let targetClasses = e.target.closest(".header-input-title");
 
-// let createPost = () => {
-//     posts.innerHTML +=
-//     `
-//     <div class="post-1 post-list-item">
-//         <p class="post-1-msg">${data.text}</p>
-//             <span class="post-btns">
-//                 <p onClick = "editPost(this)" class="edit-o post-btn">
-//                     <i class="fa-solid fa-pen-to-square"></i>O
-//                 </p>
-//                 <p onClick = "deletePost(this)" class="delete-x post-btn">
-//                     <i class="fa-solid fa-check"></i>X
-//                  </p>
-//             </span>
-//     </div>
-//     `
-//     input.value = "";
-// }
+    if (!targetClasses) return;
 
-// let deletePost = (e) => {
-//     e.parentElement.parentElement.remove()
-// }
+    console.log("clicked the task title area");
 
-// let editPost = (e) => {
-//    input.value = e.parentElement.previousElementSibling.innerHTML
-//    e.parentElement.parentElement.remove()
-// }
+});
 
-// // ----modal js
-
-
-// const modalBackdrop = document.getElementById('modal-backdrop');
-
-// function openModal() {
-//   modalBackdrop.classList.add('is-open');
-// }
-
-// function closeModal() {
-//   modalBackdrop.classList.remove('is-open');
-// }
-
-// // Optional: Close modal when clicking outside the content area
-// modalBackdrop.addEventListener('click', (event) => {
-//   if (event.target === modalBackdrop) {
-//     closeModal();
-//   }
-// });
