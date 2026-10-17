@@ -44,3 +44,14 @@ mainContainer.addEventListener("click",(e)=>{
 
 });
 
+let createPost = ()=>{
+    let newTask = `
+        <div class="task-list-1 task-item">
+            <div class="task-list-title">${taskTitle.value}</div>
+            <div class="task-list-date">${taskDate.value}</div>
+            <div class="task-list-info">${taskInfo.value}</div>
+        </div>
+    `;
+    taskBox.innerHTML += newTask;
+};
+
