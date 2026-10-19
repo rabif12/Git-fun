@@ -1,7 +1,7 @@
 const mainContainer = document.querySelector(".main-container");
-let taskListTitle = document.querySelector(".task-list-title");
-let taskListDate = document.querySelector(".task-list-date");
-let taskListInfo = document.querySelector(".task-list-info");
+let taskListTitle = document.querySelector(".header-input-title");
+let taskListDate = document.querySelector(".header-input-date");
+let taskListInfo = document.querySelector(".header-input-info");
 let taskBox = document.querySelector(".task-box");
 let selectedTask = null;
 
@@ -22,7 +22,14 @@ mainContainer.addEventListener("click",(e)=>{
         selectedTask.querySelector(".task-list-info").innerHTML=taskListInfo.value;
 
         selectedTask = null;
+
+        
+
     };
+
+        taskListTitle.value="";
+        taskListDate.value="";
+        taskListInfo.value="";
 
 });
 
