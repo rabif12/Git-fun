@@ -33,6 +33,34 @@ mainContainer.addEventListener("click",(e)=>{
 
 });
 
+//reuse this for all ---addBTN---
+mainContainer.addEventListener("click",(e)=>{
+    // this is literally all you have to change and the funtion finds any child within the parent.
+    let targetClasses = e.target.closest(".header-btn-add");
+
+    if (!targetClasses) return;
+
+    if (selectedTask===null){
+        createPost();
+    }else{
+        selectedTask.querySelector(".task-list-title").innerHTML=taskListTitle.value;
+
+        selectedTask.querySelector(".task-list-date").innerHTML=taskListDate.value;
+
+        selectedTask.querySelector(".task-list-info").innerHTML=taskListInfo.value;
+
+        selectedTask = null;
+
+        
+
+    };
+
+        taskListTitle.value="";
+        taskListDate.value="";
+        taskListInfo.value="";
+
+});
+
 //----header text area
 mainContainer.addEventListener("click",(e)=>{
     // this is literally all you have to change and the funtion finds any child within the parent.
