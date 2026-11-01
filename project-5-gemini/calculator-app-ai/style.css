@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.calc-app-display{
+    background-color: rgb(218, 241, 255);
+    text-align: right;
+    height: 39px;
+    width: 100%;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+
+.calc-display-text{
+    margin: 2px;
+    margin-right: 6px;
+}
+
+.calculator-app{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 2rem;
+    background-color: #8400ff;
+}
+.calc-app-container{
+    height: 100%;
+    min-width: 300px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calc-app-btns{
+    user-select: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 140%;
+    grid-template-areas: 
+        "calc-app-display calc-app-display calc-app-display calc-app-display"
+        "calc-app-clear-btn calc-app-clear-btn calc-app-clear-btn calc-app-clear-btn"
+        "calc-app-7-btn calc-app-8-btn calc-app-9-btn calc-app-divide-btn"
+        "calc-app-4-btn calc-app-5-btn calc-app-6-btn calc-app-multiply-btn"
+        "calc-app-1-btn calc-app-2-btn calc-app-3-btn calc-app-subtract-btn"
+        "calc-app-0-btn calc-app-period-btn calc-app-equals-btn calc-app-add-btn"
+    ;
+}
+
+.calc-app-big-btn:hover, .calc-app-small-btn:hover{
+    background-color: rgb(0, 157, 255);
+    color: white;
+}
+
+.calc-app-big-btn{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 20px;
+    border-radius: 26px;
+    cursor: pointer;
+    background-color: rgb(255, 254, 177);
+    border: 1px black solid;
+    text-align: center;
+}
+
+.calc-app-small-btn{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+    border: 1px solid black;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.calc-app-display{
+    grid-area: calc-app-display;
+}
+
+.calc-app-clear-btn{
+    grid-area: calc-app-clear-btn;
+}
+
+.calc-app-1-btn{
+    grid-area: calc-app-1-btn;
+}
+
+.calc-app-2-btn{
+    grid-area: calc-app-2-btn;
+}
+
+.calc-app-3-btn{
+    grid-area: calc-app-3-btn;
+}
+
+.calc-app-4-btn{
+    grid-area: calc-app-4-btn;
+}
+
+.calc-app-5-btn{
+    grid-area: calc-app-5-btn;
+}
+
+.calc-app-6-btn{
+    grid-area: calc-app-6-btn;
+}
+
+.calc-app-7-btn{
+    grid-area: calc-app-7-btn;
+}
+
+.calc-app-8-btn{
+    grid-area: calc-app-8-btn;
+}
+
+.calc-app-9-btn{
+    grid-area: calc-app-9-btn;
+}
+
+.calc-app-0-btn{
+    grid-area: calc-app-0-btn;
+}
+
+.calc-app-add-btn{
+    grid-area: calc-app-add-btn;
+}
+
+.calc-app-subtract-btn{
+    grid-area: calc-app-subtract-btn;
+}
+
+.calc-app-divide-btn{
+    grid-area: calc-app-divide-btn;
+}
+
+.calc-app-multiply-btn{
+    grid-area: calc-app-multiply-btn;
+}
+
+.calc-app-equals-btn{
+    grid-area: calc-app-equals-btn;
+}
+
+.calc-app-period-btn{
+    grid-area: calc-app-period-btn;
+}
