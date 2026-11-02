@@ -151,7 +151,14 @@ calcAppContainer.addEventListener("click",(e)=>{
         calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-period-btn")){
-        calcCurrentValue += ".";
+
+        if (shouldResetScreen) {
+        calcCurrentValue = "0.";
+        shouldResetScreen = false;
+        } else if (!calcCurrentValue.includes(".")) {
+            calcCurrentValue += ".";
+        }
+
         calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-equals-btn")){
@@ -171,8 +178,11 @@ calcAppContainer.addEventListener("click",(e)=>{
             result = num1 * num2;
         };
 
-        calcDisplayText.textContent = result;
+        
+
         calcCurrentValue = result.toString();
+        calcCurrentValue = calcCurrentValue.slice(0,11);
+        calcDisplayText.textContent = calcCurrentValue;
         calcPreviousValue = "";
         calcOperator = "";
         shouldResetScreen = true;
@@ -198,9 +208,8 @@ calcAppContainer.addEventListener("click",(e)=>{
         calcCurrentValue = "";
 
     };
+    calcCurrentValue = calcCurrentValue.slice(0,10);
 });
-
-
 // ==========================================
 // 4. UPDATE THE DISPLAY
 // (Function to push the current text/number onto your screen)
