@@ -16,6 +16,7 @@ let calcDisplayText = document.querySelector(".calc-display-text");
 let calcCurrentValue = "";
 let calcPreviousValue = "";
 let calcOperator = "";
+let shouldResetScreen = false;
 
 
 
@@ -34,56 +35,147 @@ calcAppContainer.addEventListener("click",(e)=>{
         
     }else if(clickedBtnElement.classList.contains("calc-app-clear-btn")){
         calcDisplayText.textContent = "";
-        calcOperator.textContent = "";
-        calcCurrentValue.textContent = "";
-        calcPreviousValue.textContent = "";
+        calcOperator = "";
+        calcCurrentValue = "";
+        calcPreviousValue = "";
+        shouldResetScreen = false;
 
     }else if(clickedBtnElement.classList.contains("calc-app-1-btn")){
-        console.log("hello")
+
+        if (shouldResetScreen){
+            calcCurrentValue = "1";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "1";
+        };
+        
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-2-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "2";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "2";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-3-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "3";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "3";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-4-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "4";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "4";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-5-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "5";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "5";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-6-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "6";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "6";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-7-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "7";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "7";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-8-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "8";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "8";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-9-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "9";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "9";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-0-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+
+        if (shouldResetScreen){
+            calcCurrentValue = "0";
+            shouldResetScreen =false;
+        }else{
+            calcCurrentValue += "0";
+        };
+
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-period-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+        calcCurrentValue += ".";
+        calcDisplayText.textContent = calcCurrentValue;
 
     }else if(clickedBtnElement.classList.contains("calc-app-equals-btn")){
-        console.log("clicked clear");
-        calcDisplayText.textContent = "";
+        console.log("clicked equals");
+
+        let result = 0;
+        const num1 = Number(calcPreviousValue);
+        const num2 = Number(calcCurrentValue);
+
+        if (calcOperator === "+"){
+            result = num1 + num2;
+        }else if(calcOperator === "-"){
+            result = num1 - num2;
+        }else if(calcOperator === "/"){
+            result = num1 / num2;
+        }else if(calcOperator === "*"){
+            result = num1 * num2;
+        };
+
+        calcDisplayText.textContent = result;
+        calcCurrentValue = result.toString();
+        calcPreviousValue = "";
+        calcOperator = "";
+        shouldResetScreen = true;
 
     }else if(clickedBtnElement.classList.contains("calc-app-add-btn")){
         calcPreviousValue = calcCurrentValue;
