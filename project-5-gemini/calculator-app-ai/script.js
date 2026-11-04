@@ -210,6 +210,8 @@ calcAppContainer.addEventListener("click",(e)=>{
     };
     calcCurrentValue = calcCurrentValue.slice(0,10);
 });
+
+
 // ==========================================
 // 4. UPDATE THE DISPLAY
 // (Function to push the current text/number onto your screen)
