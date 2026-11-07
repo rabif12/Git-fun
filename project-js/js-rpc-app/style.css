@@ -15,7 +15,7 @@
   background-color: black;
   color: white;
   text-decoration: none;
-  padding: 20px 40px ;
+  padding: 2px 4px ;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,6 +24,7 @@
 }
 
 .score-board-container{
+  padding-top: 30px;
   color: white;
   background-color: rgb(100, 0, 0);
   text-align: center;
