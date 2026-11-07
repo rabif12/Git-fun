@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .main-container{
@@ -20,4 +21,39 @@
   left: 0;
   border-radius: 6px;
   border: solid 2px rgb(251, 255, 0);
+}
+
+.score-board-container{
+  color: white;
+  background-color: rgb(100, 0, 0);
+  text-align: center;
+  min-height: 62px;
+  font-size: 1.4rem;
+}
+
+.main-title-h3{
+  text-decoration: underline;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.scores{
+  padding-left: 20px;
+}
+
+.middle-spacer{
+  padding-left: 60px;
+  padding-right: 60px;
+  color: black;
+}
+
+.score-title{
+  color: rgb(255, 217, 0);
+}
+
+.score-board{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
 }
