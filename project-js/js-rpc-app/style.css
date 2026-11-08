@@ -5,6 +5,12 @@
   font-family: sans-serif;
 }
 
+.main-container, 
+.img-wrapper, 
+img {
+  touch-action: manipulation;
+}
+
 body{
   background-color: black;
 }
