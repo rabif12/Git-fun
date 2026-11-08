@@ -20,7 +20,6 @@ body{
   height: 80vh;
   width: 100vw;
   background-color: rgb(210, 210, 210);
-  overflow: hidden;
 }
 
 .project-page-link{
