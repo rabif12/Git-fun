@@ -19,3 +19,30 @@ const stateTaxRates = {
   AS: 0.00,   // American Samoa (0% standard retail sales tax)
   MP: 0.00    // Northern Mariana Islands (0% standard retail sales tax)
 };
+let mainContainer = document.querySelector(".main-container");
+let inputAmount = document.querySelector(".amount-input");
+let resultAmount = document.querySelector(".result-amount");
+let resultTax = document.querySelector(".result-tax");
+let resultTotal = document.querySelector(".result-total");
+let statePicker = document.querySelector(".state-picker");
+
+
+mainContainer.addEventListener("click",(e)=>{
+
+  if(e.target.classList.contains("enter-btn")){
+    console.log(inputAmount.value);
+    console.log(statePicker.value);
+
+    let selectedStateCode = statePicker.value;
+    let currentRate = stateTaxRates[selectedStateCode];
+
+    resultTax.innerHTML="$"+currentRate;
+
+    resultAmount.innerHTML="$"+inputAmount.value;
+
+    resultTotal.innerHTML="$"+(parseFloat(inputAmount.value)*(currentRate)+parseFloat(inputAmount.value)).toFixed(2);
+
+
+    inputAmount.value = "";
+  }
+});

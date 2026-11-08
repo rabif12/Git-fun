@@ -20,11 +20,11 @@
       <h3 class="main-title">Tax Calculator</h3>
       <div class="input-area">
         <div class="h4">Enter Amount</div>
-        <input class="amount-input" type="number" id="amount-input" step="0.01" min="0" placeholder="0.00">
+        <input class="amount-input" type="number" id="amount-input" step="0.01" min="0" placeholder="0.00" required>
 
 
         <!-- this is for states and anything below this is strcityl the options button for states. -->
-          <select class="state-picker" id="state-picker">
+          <select class="state-picker" id="state-picker" required>
             <option value="" disabled selected>-- Select a Location --</option>
             
             <!-- 50 States + DC -->
@@ -118,6 +118,6 @@
   </div>
 
   
-  
+  <script src="./script.js"></script>
 </body>
 </html>

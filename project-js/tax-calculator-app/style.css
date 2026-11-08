@@ -5,6 +5,12 @@
   font-family: sans-serif;
 }
 
+.main-container, 
+.input-area, 
+input {
+  touch-action: manipulation;
+}
+
 .project-page-link{
   background-color: black;
   color: white;
