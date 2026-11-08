@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.project-page-link{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 2px 4px ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  border: solid 2px rgb(251, 255, 0);
+}
+
+body{
+  background-color: black;
+  height: 100svh;
+  width: 100svw;
+}
+
+.main-container{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.display-title{
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.input-container{
+  padding-top: 24px;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.display-container{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.display-result-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.result-wrapper{
+  padding: 10px;
+}
+
+.enter-btn{
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.amount-input{
+  padding: 10px
+}
+
+.state-picker{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.result-tax{
+  color: yellow;
+}
+
+.result-total{
+  color: rgb(0, 200, 0);
+  letter-spacing: 2px;
+}
