@@ -16,12 +16,14 @@ body{
   padding-top: 20px;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .main-container{
   height: 100%;
   width: 100%;
   background-color: rgb(210, 210, 210);
+  overflow: hidden;
 }
 
 .project-page-link{
