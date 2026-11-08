@@ -14,11 +14,13 @@ img {
 body{
   background-color: rgb(210, 210, 210);
   padding-top: 20px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .main-container{
-  height: 80vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgb(210, 210, 210);
 }
 
