@@ -12,13 +12,13 @@ img {
 }
 
 body{
-  background-color: black;
+  background-color: rgb(210, 210, 210);
   padding-top: 30px;
   overflow: hidden;
 }
 
 .main-container{
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   background-color: rgb(210, 210, 210);
   overflow: hidden;
