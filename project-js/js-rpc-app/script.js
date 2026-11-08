@@ -26,7 +26,12 @@ mainContainer.addEventListener("click",(e)=>{
 
   randomNum = Math.floor(Math.random()*3)+1;
 
-  if (randomNum===rockNum){
+
+  if (e.target.classList.contains("rock-btn-left")){
+
+    console.log("rock clickied");
+    
+    if (randomNum===rockNum){
     rightWrapper.innerHTML= `<img class="rock-img result-right" src="./img/rock-img-Photoroom.png" alt="Rock">`;
 
   }else if(randomNum===paperNum){
@@ -36,10 +41,6 @@ mainContainer.addEventListener("click",(e)=>{
     rightWrapper.innerHTML = `<img class="scissor-img result-right" src="./img/scissor-img-Photoroom.png" alt="scissor">`;
 
   }
-
-  if (e.target.classList.contains("rock-btn-left")){
-
-    console.log("rock clickied");
 
     leftWrapper.innerHTML = `
 
@@ -71,6 +72,17 @@ mainContainer.addEventListener("click",(e)=>{
   }else if(e.target.classList.contains("paper-btn-middle")){
     console.log("paper clickied");
 
+    if (randomNum===rockNum){
+    rightWrapper.innerHTML= `<img class="rock-img result-right" src="./img/rock-img-Photoroom.png" alt="Rock">`;
+
+  }else if(randomNum===paperNum){
+    rightWrapper.innerHTML = `<img class="paper-img result-right" src="./img/paper-img-Photoroom.png" alt="paper">`;
+
+  }else if(randomNum===scissorNum){
+    rightWrapper.innerHTML = `<img class="scissor-img result-right" src="./img/scissor-img-Photoroom.png" alt="scissor">`;
+
+  }
+
     leftWrapper.innerHTML =`
     <img class="paper-img result-left" src="./img/paper-img-Photoroom.png" alt="paper">
     `;
@@ -99,6 +111,17 @@ mainContainer.addEventListener("click",(e)=>{
 
   }else if(e.target.classList.contains("scissor-btn-right")){
     console.log("scissor clickied");
+
+    if (randomNum===rockNum){
+    rightWrapper.innerHTML= `<img class="rock-img result-right" src="./img/rock-img-Photoroom.png" alt="Rock">`;
+
+  }else if(randomNum===paperNum){
+    rightWrapper.innerHTML = `<img class="paper-img result-right" src="./img/paper-img-Photoroom.png" alt="paper">`;
+
+  }else if(randomNum===scissorNum){
+    rightWrapper.innerHTML = `<img class="scissor-img result-right" src="./img/scissor-img-Photoroom.png" alt="scissor">`;
+
+  }
 
     leftWrapper.innerHTML =`
     <img class="scissor-img result-left" src="./img/scissor-img-Photoroom.png" alt="scissor">
