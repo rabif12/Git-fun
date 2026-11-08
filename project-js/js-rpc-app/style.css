@@ -13,6 +13,8 @@ img {
 
 body{
   background-color: black;
+  padding-top: 30px;
+  overflow: hidden;
 }
 
 .main-container{
@@ -35,7 +37,7 @@ body{
 }
 
 .score-board-container{
-  padding-top: 30px;
+  /* padding-top: 30px; */
   color: white;
   background-color: rgb(100, 0, 0);
   text-align: center;
