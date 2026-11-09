@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main-container, 
+.input-area, 
+input {
+  touch-action: manipulation;
+}
+
+.project-page-link{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 2px 4px ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  border: solid 2px rgb(251, 255, 0);
+}
+
+body{
+  background-color: black;
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.input-item{
+  padding: 10px;
+  margin-top: 24px;
+}
+
+.task-item{
+  padding: 2px;
+}
+
+.input-container{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 30px;
+}
+
+.display-container{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  max-width: 360px;
+  border: solid red 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.result-title{
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.input-wrapper{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-btn{
+  position: relative;
+  top: -20%;
+}
+
+.input-title{
+  font-size: 2rem;
+}
+
+.task-block{
+  margin-bottom: 20px;
+}
