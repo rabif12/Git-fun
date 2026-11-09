@@ -52,7 +52,7 @@ body{
 }
 
 .input-container{
-  height: 30%;
+  height: 40%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ body{
 }
 
 .display-container{
-  height: 70%;
+  height: 60%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -72,7 +72,6 @@ body{
   max-width: 360px;
   padding-left: 20px;
   padding-right: 20px;
-  overflow: hidden;
 }
 
 .result-title{
@@ -95,10 +94,11 @@ body{
   top: -20%;
 }
 
-.input-title{
-  font-size: 2rem;
-}
-
 .task-block{
   margin-bottom: 20px;
+}
+
+.task-block-complete{
+  color: rgb(0, 240, 0);
+  text-decoration: line-through;
 }
