@@ -20,6 +20,11 @@
 
     <script type="text/babel">
       const container = document.querySelector('.js-container');
+      const today = new Date().toLocaleDateString();
+      const currentTime = new Date().toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit'
+      });
 
       const button = <div className="button">Hello</div>
       const paragraph = <p className="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere eligendi.</p>
@@ -31,12 +36,14 @@
 
       const div = <div className="main-container">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error ea magnam consequatur, quibusdam voluptatum maxime doloremque earum neque enim, cupiditate maiores expedita minima repellat perspiciatis, consectetur molestias eos! Necessitatibus! {2+2}</p>
+                    <p>todays date: {today}</p>
+                    <p>current time: {currentTime}</p>
                     <p>my name is {personName}</p>
                     <h4>product: {productName}</h4>
                     <p>cost: ${productCost}</p>
                     <p>shipping: ${productShipping}</p>
                     <p>Total: ${productTotal}</p>
-                    <button>Press me</button>
+                    <button>Add to Cart</button>
                   </div>
 
       
