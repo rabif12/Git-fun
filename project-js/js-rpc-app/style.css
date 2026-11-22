@@ -111,6 +111,8 @@ body{
 .display-container{
   display: flex;
   justify-content: space-between;
+  padding-right: 20%;
+  padding-left: 20%;
 }
 
 .result-right{
