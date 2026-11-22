@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  padding-top: 30px;
+}
+
+.project-page-link{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 2px 4px ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  border: solid 2px rgb(251, 255, 0);
+}
