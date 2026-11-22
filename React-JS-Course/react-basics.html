@@ -6,7 +6,7 @@
   </head>
 
   <body>
-
+    <script src="./react-script.js"></script>
     <div class="js-container"></div>
 
 
@@ -19,26 +19,31 @@
 
 
     <script type="text/babel">
+      const container = document.querySelector('.js-container');
 
       const button = <div className="button">Hello</div>
       const paragraph = <p className="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere eligendi.</p>
+      const personName = "bobert";
+      const productName = "Basketball";
+      const productCost = 19.99;
+      const productShipping = 5.99;
+      const productTotal = (productCost + productShipping).toFixed(2);
 
       const div = <div className="main-container">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error ea magnam consequatur, quibusdam voluptatum maxime doloremque earum neque enim, cupiditate maiores expedita minima repellat perspiciatis, consectetur molestias eos! Necessitatibus! {2+2}</p>
+                    <p>my name is {personName}</p>
+                    <h4>product: {productName}</h4>
+                    <p>cost: ${productCost}</p>
+                    <p>shipping: ${productShipping}</p>
+                    <p>Total: ${productTotal}</p>
                     <button>Press me</button>
                   </div>
 
       
 
-      const container = document.querySelector('.js-container');
-
       ReactDOM.createRoot(container).render(div);
 
     </script>
-
-
-  <script src="./react-script.js"></script>
-
 
   </body>
 
