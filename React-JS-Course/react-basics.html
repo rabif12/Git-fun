@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>React Basics</title>
+  </head>
+
+  <body>
+
+    <div class="js-container"></div>
+
+
+    <!-- these are the external library links you can even see the different functions and such you can use from react if you click the link -->
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <!-- this code is loaded form an externla library--- and react is the saem thing a bunhc of code sombody else wrote and we can use it in our projects.-->
+    <script src="https://unpkg.com/supersimpledev@8.6.4/external-library.js"></script>
+
+
+    <script type="text/babel">
+
+      const button = <div className="button">Hello</div>
+      const paragraph = <p className="paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus facere eligendi.</p>
+
+      const div = <div className="main-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error ea magnam consequatur, quibusdam voluptatum maxime doloremque earum neque enim, cupiditate maiores expedita minima repellat perspiciatis, consectetur molestias eos! Necessitatibus! {2+2}</p>
+                    <button>Press me</button>
+                  </div>
+
+      
+
+      const container = document.querySelector('.js-container');
+
+      ReactDOM.createRoot(container).render(div);
+
+    </script>
+
+
+  <script src="./react-script.js"></script>
+
+
+  </body>
+
+</html>
+
+
+<!-- this is the minimum amount of code needed to run react, React is an External library. -->
