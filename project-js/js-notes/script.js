@@ -54,21 +54,31 @@
 // console.log("check this out" ,add(5,5));
 
 
-String.prototype.toJadenCase=function(){
-  let splitTwitterPost=this.split(' ');
+// String.prototype.toJadenCase = function () {
+//   let splitTwitterPost = this.split(' ');
 
-  for (let i=0;i<splitTwitterPost.length;i++){
+//   for (let i = 0; i < splitTwitterPost.length; i++) {
+//     let currentTweet = splitTwitterPost[i];
+//     splitTwitterPost[i] = currentTweet[0].toUpperCase() + currentTweet.slice(1);
+//   }
 
-    let currentTweet = splitTwitterPost[i];
-    
-    console.log(splitTwitterPost[i])
+//   let regroupedTweet = splitTwitterPost.join(' ');
+//   console.log(regroupedTweet);
+//   return regroupedTweet;
+// };
 
-    splitTwitterPost[i] = currentTweet[0].toUpperCase() + currentTweet.slice(1);
-    
-    let regroupedTweet = splitTwitterPost.join(' ');
+// "crazy money".toJadenCase();
 
-    console.log(regroupedTweet);
-  }
+
+
+function highAndLow(numbers){
+
+  let splitLetters = numbers.split(' ');
+
+  let splitNumbers = splitLetters.map(Number);
+
+  let originalValue = splitNumbers[0];
+
+  console.log(originalValue)
+
 }
-
-"crazy money".toJadenCase();
