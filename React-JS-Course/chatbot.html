@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+v
 
   <head>
     <title>Chatbot Basics</title>
@@ -81,6 +82,20 @@
       }
 
       function App(){
+
+        chatMessages=[{
+          message:"Hello Chatbot",
+          sender:"user"
+        },{
+          message:"Hello! How Can I Help?",
+          sender:"robot"
+        },{
+          message:"What's todays date?",
+          sender:"user"
+        },{
+          message:"today is "+today,
+          sender:"robot"
+        }];
         return(
           <>
 
