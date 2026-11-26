@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #00ff41;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: .11rem;
+  font-variant-numeric: tabular-nums; /* Keeps changing numbers aligned without jitter */
+  text-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.16),
+    0 0 8px rgba(0, 255, 65, 0.45),     /* Color-matched to #00ff41 */
+    0 0 18px rgba(0, 255, 65, 0.15);   /* Subtle outer bloom */
+}
+
+.login-title{
+  margin-top: 80px;
+  font-size: .6rem;
+  margin-bottom: 0;
+}
+
+input{
+  color: #818181;
+  background-color: #000000;
+  border: solid 1px green;
+  box-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.129),
+    0 0 8px rgba(0, 255, 64, 0.115),
+    0 0 18px rgba(0, 255, 65, 0.15),
+    inset 0 0 8px rgba(0, 255, 64, 0.132);
+}
+
+.submit-btn{
+  background-color: #000000;
+  border: solid 1px green;
+  margin-left: 4px;
+  color: #00ff41;
+  text-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.16),
+    0 0 8px rgba(0, 255, 65, 0.45),     /* Color-matched to #00ff41 */
+    0 0 18px rgba(0, 255, 65, 0.15);
+  box-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.129),
+    0 0 8px rgba(0, 255, 64, 0.115),
+    0 0 18px rgba(0, 255, 65, 0.15),
+    inset 0 0 8px rgba(0, 255, 64, 0.132);
+}
+
+.submit-btn:hover{
+  background-color: #00ff41;
+  color: black;
+}
